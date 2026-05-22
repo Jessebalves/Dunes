@@ -4,18 +4,18 @@
 <details>
 <summary>Table of Contents</summary>
   
-1. [Summary](#summary)
-2. [Features](#features)
-3. [Visuals](#visuals)
-4. [Technologies](#technologies)
-5. [What I Learned](#what-i-learned)
-6. [Setup and Installation](#setup-and-installation)
-7. [Usage](#usage)
-8. [Code Examples](#code-examples)
-9. [How to Contribute](#how-to-contribute)
-10. [License](#license)
-11. [Contact](#contact)
-12. [Acknowledgments](#acknowledgments)
+- [Summary](#summary)
+- [Features](#features)
+- [Visuals](#visuals)
+- [Technologies](#technologies)
+- [What I Learned](#what-i-learned)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Code Examples](#code-examples)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
 </details>
 
