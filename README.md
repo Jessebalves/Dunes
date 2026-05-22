@@ -20,11 +20,11 @@
 </details>
 
 ## Summary
-*Quickly introduce what your project does and its purpose. Engage the reader's interest.*
+*Dunes is a real time strategy game created within the GoDot game engine, using GDscript as our scripting language. Our idea for Dunes is that we wanted a real time strategy game similar to existing video game IPs such as Totem Tribe and Starcraft, but with our own unique spin on it. We wanted our video game to take place in a desert theme, where the player units are desert based animals versus artificially controlled desert based insects.*
 
 ## Features
 List the standout features of your project and what makes it unique.
-- **Feature 1**: Brief description.
+- **Main Menu**: Scene that allows users to navigate to the save file screen, settings screen, and quitting the game.
 - **Feature 2**: Brief description.
 - **Feature 3**: Brief description.
 - ... and so on.
@@ -34,9 +34,9 @@ List the standout features of your project and what makes it unique.
 
 ## Technologies
 Detail the technologies, languages, frameworks, and tools used in the project.
-- Technology 1
-- Technology 2
-- Technology 3
+- GoDot
+- GDscript
+- Pixilart
 
 ## What I Learned
 Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.
