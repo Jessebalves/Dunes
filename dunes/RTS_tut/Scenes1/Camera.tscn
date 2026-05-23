@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://csvt0nfoqycjd"]
+
+[ext_resource type="PackedScene" uid="uid://ctle5bhq75okx" path="res://RTS_tut/Scenes1/orth_cam.tscn" id="1_g5pjx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hktjx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxj3w"]
+albedo_color = Color(0.27, 0.21087001, 0.0729, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tmk2r"]
+size = Vector3(5, 5, 5)
+
+[node name="Camera_Scene" type="Node3D" unique_id=1702495068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4553571, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1930243806]
+transform = Transform3D(90.15252, 0, 0, 0, 0.85069925, 0, 0, 0, 56.678726, 0, 0, 0)
+mesh = SubResource("BoxMesh_hktjx")
+surface_material_override/0 = SubResource("StandardMaterial3D_hxj3w")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=878305244]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8570142, 0)
+mesh = SubResource("BoxMesh_tmk2r")
+
+[node name="cameraPivot" parent="." unique_id=1510060082 instance=ExtResource("1_g5pjx")]

@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://3y7deqqjdwu"]
+
+[ext_resource type="Script" uid="uid://j62jt37i1jpt" path="res://RTS_tut/rts_controller.gd" id="1_jccdu"]
+[ext_resource type="PackedScene" uid="uid://dthwrwrlfxr7v" path="res://RTS_tut/Scenes/TerrainSystem.tscn" id="2_73bv7"]
+[ext_resource type="Texture2D" uid="uid://dkowggd37osg0" path="res://_assets/skyboxes/sky_12_cubemap_2k/sky_12_2k.png" id="3_lvk7a"]
+
+[sub_resource type="GDScript" id="GDScript_1gx6a"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_guv6x"]
+panorama = ExtResource("3_lvk7a")
+
+[sub_resource type="Sky" id="Sky_0x3kb"]
+sky_material = SubResource("PanoramaSkyMaterial_guv6x")
+
+[sub_resource type="Environment" id="Environment_hdk0u"]
+background_mode = 2
+sky = SubResource("Sky_0x3kb")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RTSController" type="Node3D" parent="."]
+script = ExtResource("1_jccdu")
+
+[node name="Elevation" type="Node3D" parent="RTSController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 64, 0)
+script = SubResource("GDScript_1gx6a")
+
+[node name="Camera3D" type="Camera3D" parent="RTSController/Elevation"]
+
+[node name="TerrainSystem" parent="." instance=ExtResource("2_73bv7")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.9954062, 0.0874642, 0.038941573, -0.095741495, -0.9093489, -0.40486822, 0, -0.40673664, 0.9135454, 0, 345, 0)
+light_color = Color(1, 0.93600005, 0.68, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_hdk0u")

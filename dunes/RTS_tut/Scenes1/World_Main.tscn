@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://i1yi7wovps4p"]
+
+[ext_resource type="PackedScene" uid="uid://dthwrwrlfxr7v" path="res://RTS_tut/TerrainSystem.tscn" id="2_ipb6e"]
+[ext_resource type="Texture2D" uid="uid://dkowggd37osg0" path="res://_assets/skyboxes/sky_12_cubemap_2k/sky_12_2k.png" id="3_8scka"]
+[ext_resource type="PackedScene" uid="uid://ctle5bhq75okx" path="res://RTS_tut/Scenes1/orth_cam.tscn" id="3_icoi1"]
+[ext_resource type="Texture2D" uid="uid://dmgsbtg7qhsbu" path="res://_assets/AntHill.png" id="4_42f8l"]
+[ext_resource type="Texture2D" uid="uid://d4bw6njlbhkbw" path="res://_assets/Coati_Tent_Build_Menu.png" id="5_cyyi6"]
+[ext_resource type="Script" uid="uid://ddokxetdwhq5c" path="res://RTS_tut/Scenes1/build_menu_scriptin.gd" id="6_cyyi6"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_guv6x"]
+panorama = ExtResource("3_8scka")
+
+[sub_resource type="Sky" id="Sky_0x3kb"]
+sky_material = SubResource("PanoramaSkyMaterial_guv6x")
+
+[sub_resource type="Environment" id="Environment_hdk0u"]
+background_mode = 2
+sky = SubResource("Sky_0x3kb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_icoi1"]
+albedo_color = Color(5.583167e-06, 0.7611754, 0.8525843, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ipb6e"]
+material = SubResource("StandardMaterial3D_icoi1")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42f8l"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v4uk5"]
+
+[node name="Node3D" type="Node3D" unique_id=460828486]
+
+[node name="TerrainSystem" parent="." unique_id=1427413816 instance=ExtResource("2_ipb6e")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=668749793]
+transform = Transform3D(-0.99540627, 0.08746422, 0.03894158, -0.0957415, -0.9093489, -0.4048682, 0, -0.40673664, 0.9135455, -1281.5789, 345, 0)
+light_color = Color(1, 0.93600005, 0.68, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1515831144]
+environment = SubResource("Environment_hdk0u")
+
+[node name="cameraPivot" parent="." unique_id=2109748998 instance=ExtResource("3_icoi1")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 57.324, 36.217)
+
+[node name="Camera3D" parent="cameraPivot" index="0" unique_id=612828624]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 28.262, 81.078)
+projection = 0
+current = true
+fov = 95.0
+size = 128.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1289686333]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 14.62798, 0)
+mesh = SubResource("BoxMesh_ipb6e")
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=671522033]
+unique_name_in_owner = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -125.0
+offset_bottom = 48.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_42f8l")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_v4uk5")
+toggle_mode = false
+action_mode = 1
+text = "Build "
+flat = false
+icon_alignment = 1
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = "Ant Hill"
+popup/item_0/icon = ExtResource("4_42f8l")
+popup/item_0/id = 0
+popup/item_1/text = "Coati Crib"
+popup/item_1/icon = ExtResource("5_cyyi6")
+popup/item_1/id = 1
+script = ExtResource("6_cyyi6")
+
+[connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_pressed"]
+
+[editable path="cameraPivot"]

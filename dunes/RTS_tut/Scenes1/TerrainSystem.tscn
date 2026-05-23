@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dthwrwrlfxr7v"]
+
+[ext_resource type="Script" uid="uid://bvemplmhagpek" path="res://RTS_tut/TerrainSystem.gd" id="1_yqc5a"]
+[ext_resource type="Material" uid="uid://cgixe4fpf2rxm" path="res://_assets/TerrainMaterial.tres" id="2_qfc7s"]
+
+[node name="TerrainSystem" type="Node3D" node_paths=PackedStringArray("player")]
+script = ExtResource("1_yqc5a")
+player = NodePath(".")
+terrain_material = ExtResource("2_qfc7s")

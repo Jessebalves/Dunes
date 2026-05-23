@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://3y7deqqjdwu"]
+
+[ext_resource type="Script" uid="uid://j62jt37i1jpt" path="res://RTS_tut/rts_controller.gd" id="1_2fl23"]
+[ext_resource type="PackedScene" uid="uid://dthwrwrlfxr7v" path="res://RTS_tut/TerrainSystem.tscn" id="2_1gx6a"]
+
+[sub_resource type="GDScript" id="GDScript_1gx6a"]
+
+[node name="RTSController" type="Node3D"]
+script = ExtResource("1_2fl23")
+
+[node name="Elevation" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 64, 0)
+script = SubResource("GDScript_1gx6a")
+
+[node name="Camera3D" type="Camera3D" parent="Elevation"]
+
+[node name="TerrainSystem" parent="." instance=ExtResource("2_1gx6a")]
