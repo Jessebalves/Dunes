@@ -1,0 +1,12 @@
+# Blender 4.2.2 LTS MTL File: 'Cactus.blend'
+# www.blender.org
+
+newmtl Cactus
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/omars/OneDrive/Desktop/1000/Cactus/T/ueopfjiga_4K_Albedo.jpg
+map_Ns C:/Users/omars/OneDrive/Desktop/1000/Cactus/T/ueopfjiga_4K_Roughness.jpg
