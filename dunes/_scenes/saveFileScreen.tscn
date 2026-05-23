@@ -1,0 +1,479 @@
+[gd_scene format=3 uid="uid://dwn5t2tfdjy7v"]
+
+[ext_resource type="Script" uid="uid://lsvxctov11gr" path="res://_scripts/save_file_screen.gd" id="1_qa37r"]
+[ext_resource type="Script" path="res://_scripts/saveManager.gd" id="2_i6mg8"]
+[ext_resource type="Texture2D" uid="uid://d4iksoffn4254" path="res://_assets/SaveFileScreen.png" id="2_ovok3"]
+[ext_resource type="Script" uid="uid://cpqkauj5vb47d" path="res://_scripts/deleto_savos.gd" id="4_ovok3"]
+[ext_resource type="Script" uid="uid://bsynhjh2ncyli" path="res://_scripts/submit.gd" id="4_p3x4u"]
+[ext_resource type="Texture2D" uid="uid://dry2qjyx7p84h" path="res://_assets/BackButton.png" id="6_kyeit"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t0g64"]
+bg_color = Color(11.708, 11.708, 11.708, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kyeit"]
+
+[node name="Control" type="Control" unique_id=1848588336]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qa37r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1595317376]
+layout_mode = 0
+offset_top = -2.0
+offset_right = 1165.0
+offset_bottom = 676.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=1001509220]
+layout_mode = 0
+offset_right = 1162.0
+offset_bottom = 678.0
+texture = ExtResource("2_ovok3")
+
+[node name="Label" type="Label" parent="." unique_id=1019984609]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -209.5
+offset_right = 209.5
+offset_bottom = 207.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+text = "Select a save file...
+
+"
+horizontal_alignment = 3
+vertical_alignment = 2
+
+[node name="fileOne" type="Button" parent="." unique_id=1714939873]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0.36862746)
+layout_mode = 0
+offset_left = 38.0
+offset_top = 210.0
+offset_right = 375.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 32
+script = ExtResource("2_i6mg8")
+metadata/slot = 1
+
+[node name="Label1" type="Label" parent="fileOne" unique_id=1781669137]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.5
+offset_top = -160.0
+offset_right = 143.5
+offset_bottom = -9.297791
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "FILE 1
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LvlsComplete" type="Label" parent="fileOne" unique_id=1847826680]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.5
+offset_top = -55.0
+offset_right = 137.5
+offset_bottom = 95.70221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Levels Complete:
+
+"
+vertical_alignment = 3
+
+[node name="TimePlayed" type="Label" parent="fileOne" unique_id=2051732426]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.5
+offset_top = -27.0
+offset_right = 138.5
+offset_bottom = 123.70221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Time Played:
+
+"
+vertical_alignment = 3
+
+[node name="FileOneName" type="Label" parent="fileOne" unique_id=316688099]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.5
+offset_top = -79.0
+offset_right = 137.5
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Name: 
+
+"
+vertical_alignment = 3
+
+[node name="fileTwo" type="Button" parent="." unique_id=2006441880]
+self_modulate = Color(1, 1, 1, 0.36862746)
+layout_mode = 0
+offset_left = 414.0
+offset_top = 204.0
+offset_right = 751.0
+offset_bottom = 464.0
+script = ExtResource("2_i6mg8")
+
+[node name="Label" type="Label" parent="fileTwo" unique_id=565110609]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.5
+offset_top = -160.0
+offset_right = 143.5
+offset_bottom = -9.297791
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "FILE 2
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FileTwoName" type="Label" parent="fileTwo" unique_id=1364105164]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.5
+offset_top = -69.0
+offset_right = 140.5
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Name: 
+
+"
+vertical_alignment = 3
+
+[node name="LvlsComplete2" type="Label" parent="fileTwo" unique_id=579840813]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.5
+offset_top = -48.0
+offset_right = 140.5
+offset_bottom = 102.70221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Levels Complete:
+
+"
+vertical_alignment = 3
+
+[node name="TimePlayed2" type="Label" parent="fileTwo" unique_id=1781840053]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.5
+offset_top = -23.0
+offset_right = 140.5
+offset_bottom = 127.70221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Time Played:
+
+"
+vertical_alignment = 3
+
+[node name="fileThree" type="Button" parent="." unique_id=1703177906]
+self_modulate = Color(1, 1, 1, 0.36862746)
+layout_mode = 0
+offset_left = 796.0
+offset_top = 211.0
+offset_right = 1120.0
+offset_bottom = 464.0
+script = ExtResource("2_i6mg8")
+
+[node name="Label" type="Label" parent="fileThree" unique_id=98766236]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.5
+offset_top = -160.0
+offset_right = 143.5
+offset_bottom = -9.297791
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "FILE 3
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FileThreeName" type="Label" parent="fileThree" unique_id=1823677991]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -157.5
+offset_top = -73.5
+offset_right = 135.5
+offset_bottom = 77.20221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Name: 
+
+"
+vertical_alignment = 3
+
+[node name="LvlsComplete3" type="Label" parent="fileThree" unique_id=766063363]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.5
+offset_top = -45.5
+offset_right = 136.5
+offset_bottom = 105.20221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Levels Complete:
+
+"
+vertical_alignment = 3
+
+[node name="TimePlayed3" type="Label" parent="fileThree" unique_id=844277009]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.5
+offset_top = -17.5
+offset_right = 136.5
+offset_bottom = 133.20221
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Time Played:
+
+"
+vertical_alignment = 3
+
+[node name="createFile" type="Button" parent="." unique_id=1486455743]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 592.0
+offset_right = 926.0
+offset_bottom = 643.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0g64")
+text = "Create File
+"
+script = ExtResource("2_i6mg8")
+
+[node name="Window" type="Window" parent="createFile" unique_id=879772765]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Create a Save File"
+initial_position = 1
+size = Vector2i(300, 200)
+visible = false
+
+[node name="Submit" type="Button" parent="createFile/Window" unique_id=898993235]
+offset_left = 89.0
+offset_top = 136.0
+offset_right = 209.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0g64")
+text = "Submit"
+script = ExtResource("4_p3x4u")
+
+[node name="LineEdit" type="LineEdit" parent="createFile/Window/Submit" unique_id=1132627144]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -65.0
+offset_top = -123.0
+offset_right = 177.0
+offset_bottom = -65.0
+placeholder_text = "Enter your name"
+
+[node name="LineEdit2" type="LineEdit" parent="createFile/Window/Submit" unique_id=115082487]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -67.0
+offset_top = -59.0
+offset_right = 175.0
+offset_bottom = -7.0
+placeholder_text = "Choose Save Slot"
+
+[node name="deleteFileButton" type="Button" parent="." unique_id=1246461886]
+layout_mode = 0
+offset_left = 942.0
+offset_top = 592.0
+offset_right = 1078.0
+offset_bottom = 643.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0g64")
+text = "Delete File
+"
+script = ExtResource("2_i6mg8")
+
+[node name="Window2" type="Window" parent="deleteFileButton" unique_id=1920412648]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Delete a Save File"
+initial_position = 1
+size = Vector2i(300, 200)
+visible = false
+
+[node name="file1delete" type="Button" parent="deleteFileButton/Window2" unique_id=1409019656]
+offset_left = 78.0
+offset_top = 14.0
+offset_right = 214.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0g64")
+text = "File 1
+"
+script = ExtResource("4_ovok3")
+
+[node name="file2delete" type="Button" parent="deleteFileButton/Window2" unique_id=37215649]
+offset_left = 78.0
+offset_top = 75.0
+offset_right = 214.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0g64")
+text = "File 2
+"
+script = ExtResource("4_ovok3")
+
+[node name="file3delete" type="Button" parent="deleteFileButton/Window2" unique_id=1205097332]
+offset_left = 77.0
+offset_top = 137.0
+offset_right = 213.0
+offset_bottom = 188.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0g64")
+text = "File 3
+"
+script = ExtResource("1_qa37r")
+
+[node name="backToMainMenuButton" type="Button" parent="." unique_id=1434548530]
+layout_mode = 0
+offset_left = 1093.0
+offset_top = 591.0
+offset_right = 1134.0
+offset_bottom = 642.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_kyeit")
+icon = ExtResource("6_kyeit")
+flat = true
+script = ExtResource("1_qa37r")
+
+[connection signal="pressed" from="fileOne" to="fileOne" method="loading_save_one"]
+[connection signal="ready" from="fileOne/Label1" to="fileOne/Label1" method="_on_ready"]
+[connection signal="pressed" from="fileTwo" to="fileTwo" method="loading_save_two"]
+[connection signal="pressed" from="fileThree" to="fileThree" method="loading_save_three"]
+[connection signal="pressed" from="createFile" to="createFile" method="_on_pressed"]
+[connection signal="pressed" from="createFile" to="createFile" method="create_save"]
+[connection signal="close_requested" from="createFile/Window" to="." method="_on_window_close_requested"]
+[connection signal="pressed" from="createFile/Window/Submit" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="createFile/Window/Submit" to="createFile/Window/Submit" method="_on_pressed"]
+[connection signal="pressed" from="deleteFileButton" to="deleteFileButton" method="delete_file"]
+[connection signal="close_requested" from="deleteFileButton/Window2" to="." method="_on_window_2_close_requested"]
+[connection signal="pressed" from="deleteFileButton/Window2/file1delete" to="deleteFileButton/Window2/file1delete" method="_on_pressed"]
+[connection signal="pressed" from="deleteFileButton/Window2/file2delete" to="." method="_on_file_2_delete_pressed"]
+[connection signal="pressed" from="deleteFileButton/Window2/file3delete" to="." method="_on_file_3_delete_pressed"]
+[connection signal="pressed" from="backToMainMenuButton" to="backToMainMenuButton" method="_on_pressed"]

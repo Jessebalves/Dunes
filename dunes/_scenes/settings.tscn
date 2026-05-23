@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://c0db4x0824i4y"]
+
+[ext_resource type="Texture2D" uid="uid://dry2qjyx7p84h" path="res://_assets/BackButton.png" id="1_crstm"]
+[ext_resource type="Script" uid="uid://cgdboig40w757" path="res://_scenes/back_to_main_menu_button.gd" id="1_meyfg"]
+[ext_resource type="Script" uid="uid://b3gjrd2orvfw2" path="res://_scripts/audio_control.gd" id="4_aypq2"]
+[ext_resource type="Script" uid="uid://ch6hyk7bj11tf" path="res://_scripts/brightness_slider.gd" id="5_rriig"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rriig"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_x2hje"]
+color = Color(1, 1, 1, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_nkug2"]
+color = Color(0.35686275, 0, 0, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_3ykye"]
+color = Color(0.35686275, 0, 0, 1)
+thickness = 5
+
+[node name="Settings" type="Control" unique_id=1593426124]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=475001768]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1722474104]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.0
+offset_top = 23.0
+offset_right = 68.0
+offset_bottom = 72.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 35
+text = "Settings"
+
+[node name="backToMainMenuButton" type="Button" parent="." unique_id=1444240443]
+layout_mode = 0
+offset_left = 1084.0
+offset_top = 586.0
+offset_right = 1126.0
+offset_bottom = 637.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_rriig")
+icon = ExtResource("1_crstm")
+flat = true
+script = ExtResource("1_meyfg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=618205139]
+autoplay = true
+bus = &"Music"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=628478505]
+autoplay = true
+bus = &"SFX"
+
+[node name="Audio" type="Panel" parent="." unique_id=1908556467]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 95.0
+offset_right = 317.0
+offset_bottom = 326.0
+
+[node name="Audio Label" type="Label" parent="Audio" unique_id=33009315]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.0
+offset_right = 43.0
+offset_bottom = 39.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+text = "Audio:"
+
+[node name="Master Label" type="Label" parent="Audio" unique_id=534630711]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -118.0
+offset_top = 42.0
+offset_right = -40.0
+offset_bottom = 74.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 21
+text = "Master:"
+
+[node name="Master slider" type="HSlider" parent="Audio" unique_id=782028865]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -41.5
+offset_right = 111.0
+offset_bottom = -25.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_x2hje")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_nkug2")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_3ykye")
+max_value = 1.0
+step = 0.001
+script = ExtResource("4_aypq2")
+bus_name = "Master"
+
+[node name="Music Label" type="Label" parent="Audio" unique_id=423140796]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 17.0
+offset_top = -10.5
+offset_right = 95.0
+offset_bottom = 21.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 21
+text = "Music:"
+
+[node name="Music slider" type="HSlider" parent="Audio" unique_id=1010618052]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = 24.5
+offset_right = 111.0
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_x2hje")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_nkug2")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_3ykye")
+max_value = 1.0
+step = 0.001
+script = ExtResource("4_aypq2")
+bus_name = "Music"
+
+[node name="SFX Label" type="Label" parent="Audio" unique_id=937767506]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 14.0
+offset_top = 47.5
+offset_right = 147.0
+offset_bottom = 79.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 21
+text = "Sound Effect:"
+
+[node name="SFX slider" type="HSlider" parent="Audio" unique_id=2131321891]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = 82.5
+offset_right = 111.0
+offset_bottom = 98.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_x2hje")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_nkug2")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_3ykye")
+max_value = 1.0
+step = 0.001
+script = ExtResource("4_aypq2")
+bus_name = "SFX"
+
+[node name="Brightness" type="Panel" parent="." unique_id=716540378]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 96.0
+offset_right = 678.0
+offset_bottom = 181.0
+
+[node name="Brightness Label" type="Label" parent="Brightness" unique_id=1181428049]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_right = 43.5
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+text = "Brightness: "
+
+[node name="Brightness_slider" type="HSlider" parent="Brightness" unique_id=954965253]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = 8.5
+offset_right = 111.0
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_x2hje")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_nkug2")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_3ykye")
+min_value = 0.2
+max_value = 4.0
+step = 0.01
+value = 1.0
+script = ExtResource("5_rriig")
+
+[connection signal="pressed" from="backToMainMenuButton" to="backToMainMenuButton" method="_on_pressed"]
+[connection signal="value_changed" from="Audio/Master slider" to="Audio/Master slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Audio/Music slider" to="Audio/Music slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Audio/SFX slider" to="Audio/SFX slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Brightness/Brightness_slider" to="Brightness/Brightness_slider" method="_on_value_changed"]

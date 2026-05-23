@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dh13jw81kyd3l"]
+
+[ext_resource type="AudioStream" uid="uid://cdiulkeri0lwo" path="res://_music/mainMenuMusic.wav" id="1_qhs1u"]
+[ext_resource type="Script" uid="uid://chvq0dq3l8omh" path="res://_scripts/music_manager.gd" id="1_s61lv"]
+[ext_resource type="AudioStream" uid="uid://c5iqb3aqicj6a" path="res://_music/tutorial_maybe.wav" id="3_28x0f"]
+
+[node name="MusicManager" type="Node" unique_id=1570781259]
+script = ExtResource("1_s61lv")
+
+[node name="MainMenu" type="AudioStreamPlayer" parent="." unique_id=1834268404]
+unique_name_in_owner = true
+stream = ExtResource("1_qhs1u")
+autoplay = true
+
+[node name="DaManager" type="AudioStreamPlayer" parent="." unique_id=1894496277]
+unique_name_in_owner = true
+stream = ExtResource("3_28x0f")

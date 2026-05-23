@@ -1,0 +1,246 @@
+[gd_scene format=3 uid="uid://byt8q70spo5k7"]
+
+[ext_resource type="Script" uid="uid://dn26uqweapcnx" path="res://_scripts/main_menu.gd" id="1_fasvp"]
+[ext_resource type="Texture2D" uid="uid://0nmyc8xx8v5o" path="res://_assets/PlayButton.png" id="3_keob6"]
+[ext_resource type="Texture2D" uid="uid://bjdjpr87d2d64" path="res://_assets/icon.svg" id="3_q13kq"]
+[ext_resource type="Texture2D" uid="uid://qhvbq6em2mqs" path="res://_assets/herculesBeetle (1).png" id="3_tcb7q"]
+[ext_resource type="Texture2D" uid="uid://u10bun65wape" path="res://_assets/Settings.png" id="3_tmamg"]
+[ext_resource type="Texture2D" uid="uid://c3a7bhxgnwsq5" path="res://_assets/Unmute.png" id="4_keob6"]
+[ext_resource type="Texture2D" uid="uid://cn1atcmpdldx8" path="res://_assets/ExitButton.png" id="4_t0dsc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t0dsc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(11.708, 11.708, 11.708, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t0dsc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_niher"]
+
+[sub_resource type="Animation" id="Animation_fasvp"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.99215686)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.9882353)]
+}
+
+[sub_resource type="Animation" id="Animation_jx3df"]
+resource_name = "main_menu_animation"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tcb7q"]
+_data = {
+&"RESET": SubResource("Animation_fasvp"),
+&"main_menu_animation": SubResource("Animation_jx3df")
+}
+
+[node name="MainMenu" type="Control" unique_id=1024130296 groups=["SaveManager"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 2.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 0.0
+script = ExtResource("1_fasvp")
+
+[node name="background" type="ColorRect" parent="." unique_id=2021253716]
+layout_mode = 0
+offset_left = -119.0
+offset_top = -61.0
+offset_right = 1413.0
+offset_bottom = 754.0
+color = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=64903046]
+visible = false
+position = Vector2(92.325, 571.591)
+scale = Vector2(0.79179686, 0.7592343)
+texture = ExtResource("3_q13kq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1279186659]
+modulate = Color(1, 1, 1, 0)
+visibility_layer = 788
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.0
+offset_top = -85.0
+offset_right = 142.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="startGameButton" type="Button" parent="VBoxContainer" unique_id=110246399]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t0dsc")
+icon = ExtResource("3_keob6")
+flat = true
+script = ExtResource("1_fasvp")
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=861094990]
+visible = false
+self_modulate = Color(0.9490196, 0.9490196, 0.9490196, 1)
+layout_mode = 2
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+icon = ExtResource("3_keob6")
+flat = true
+script = ExtResource("1_fasvp")
+
+[node name="tutorialButton" type="Button" parent="VBoxContainer" unique_id=1106358551]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+text = "Tutorial
+"
+
+[node name="quitButton1" type="Button" parent="VBoxContainer" unique_id=1936838328]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+text = "
+"
+icon = ExtResource("4_t0dsc")
+flat = true
+script = ExtResource("1_fasvp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1582039001]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 1046.0
+offset_top = 571.0
+offset_right = 1141.0
+offset_bottom = 641.0
+
+[node name="settingsButton" type="Button" parent="HBoxContainer" unique_id=1537632436]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_t0dsc")
+text = "Hello there"
+icon = ExtResource("3_tmamg")
+flat = true
+text_overrun_behavior = 2
+script = ExtResource("1_fasvp")
+
+[node name="muteButton" type="Button" parent="HBoxContainer" unique_id=626229347]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_niher")
+text = "Hello there"
+icon = ExtResource("4_keob6")
+flat = true
+text_overrun_behavior = 2
+script = ExtResource("1_fasvp")
+
+[node name="Label" type="Label" parent="." unique_id=1847527393]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -198.0
+offset_top = 90.0
+offset_right = 134.0
+offset_bottom = 261.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 48
+text = "Dunes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=300584922]
+libraries/ = SubResource("AnimationLibrary_tcb7q")
+autoplay = &"main_menu_animation"
+
+[node name="HerculesBeetle(1)" type="Sprite2D" parent="." unique_id=490051792]
+visible = false
+position = Vector2(214, 577)
+texture = ExtResource("3_tcb7q")
+
+[connection signal="pressed" from="VBoxContainer/startGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/quitButton1" to="." method="_on_quit_button_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/settingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/muteButton" to="." method="_on_mute_button_pressed"]
