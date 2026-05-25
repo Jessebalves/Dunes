@@ -26,7 +26,7 @@
 <!--List the standout features of your project and what makes it unique.-->
 - **Main Menu**: Scene that allows users to navigate to the save file screen, settings screen, and quitting the game.
 - **Settings Screen**: Allows for users to adjust the in game brightness, music volume, and resolution.
-- **Save File Management**: Brief description.
+- **Save File Management**: System has a dedicated user directory where save files are stored. System can read, write, and delete data from this directory whenever needed.
 - ... and so on.
 
 ## Visuals
@@ -39,7 +39,7 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 - Pixilart
 
 ## What I Learned
-Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.
+<!--Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.-->
 - **Skill or Concept 1**: How you applied it in the project.
 - **Skill or Concept 2**: Challenges you overcame.
 - **Skill or Concept 3**: Any particular achievements or insights.
@@ -74,5 +74,5 @@ Highlight specific skills or concepts you learned or improved upon while working
 
 ## Acknowledgments
 *Credits to individuals or resources that helped you during the project.*
-
+- Godot Documentation: https://docs.godotengine.org/en/stable/
 ---
