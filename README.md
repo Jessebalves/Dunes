@@ -44,7 +44,7 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 
 ## What I Learned
 <!--Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.-->
-- **Skill or Concept 1**: How you applied it in the project.
+- **Gdscript**: This is the scripting language used in GoDot. All of the members of the team came into this project knowing nothing about Gdscript.
 - **Skill or Concept 2**: Challenges you overcame.
 - **Skill or Concept 3**: Any particular achievements or insights.
 
@@ -61,7 +61,8 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 *Show small, but significant snippets of code from your project.*
 
 ## How to Contribute
-*Encourage contributions and provide guidelines for how others can help.*
+<!--*Encourage contributions and provide guidelines for how others can help.*-->
+This project is open source, feel free to download the project and make changes as you see fit! If you'd like to rework anything, or use existing components of our game for your own game, go ahead! 
 
 ## License
 *State the license under which your project is available.*
