@@ -30,7 +30,11 @@
 - ... and so on.
 
 ## Visuals
-*Insert images or gifs showing your project in action. Consider before/after shots, workflows, or demos.*
+<!--*Insert images or gifs showing your project in action. Consider before/after shots, workflows, or demos.*-->
+<img width="1071" height="516" alt="menuuu_duno" src="https://github.com/user-attachments/assets/83a559ad-8264-43d5-a2a2-5c33965efe86" />
+<img width="907" height="586" alt="savinnnnn" src="https://github.com/user-attachments/assets/f7e40125-32cc-4f5a-9c91-bdc41e65d347" />
+
+
 
 ## Technologies
 Detail the technologies, languages, frameworks, and tools used in the project.
