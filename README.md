@@ -27,6 +27,9 @@
 - **Main Menu**: Scene that allows users to navigate to the save file screen, settings screen, and quitting the game.
 - **Settings Screen**: Allows for users to adjust the in game brightness, music volume, and resolution.
 - **Save File Management**: System has a dedicated user directory where save files are stored. System can read, write, and delete data from this directory whenever needed.
+- **Camera System & Terrain**: Fully functional camera system that allows for switching of position, angle, and total zoom.
+- **Combat System**: Interactive combat system where different emojis are displayed above player units, signifying whether the unit is in combat or not.
+- **Enemy Artifical Intelligence**: Predetermined actions taken by enemies dependent upon what state is currently active.
 - ... and so on.
 
 ## Visuals
