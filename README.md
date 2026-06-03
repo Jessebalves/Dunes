@@ -30,7 +30,6 @@
 - **Camera System & Terrain**: Fully functional camera system that allows for switching of position, angle, and total zoom.
 - **Combat System**: Interactive combat system where different emojis are displayed above player units, signifying whether the unit is in combat or not.
 - **Enemy Artifical Intelligence**: Predetermined actions taken by enemies dependent upon what state is currently active.
-- ... and so on.
 
 ## Visuals
 <!--*Insert images or gifs showing your project in action. Consider before/after shots, workflows, or demos.*-->
@@ -81,6 +80,6 @@ This project is open source, feel free to download the project and make changes 
 <!--- *Any other contact information*-->
 
 ## Acknowledgments
-*Credits to individuals or resources that helped you during the project.*
+<!--*Credits to individuals or resources that helped you during the project.*-->
 - Godot Documentation: https://docs.godotengine.org/en/stable/
 ---
