@@ -52,7 +52,7 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 
 ## Setup and Installation
 *Provide a clear, step-by-step guide to set up the project locally.*
-1. Clone the repo: `git clone [URL]`
+1. Clone the repo: `git clone https://github.com/Jessebalves/Dunes.git`
 2. Install dependencies: `[Example Command]`
 3. Additional steps...
 
