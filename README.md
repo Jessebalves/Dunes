@@ -13,7 +13,6 @@
 - [Usage](#usage)
 - [Code Examples](#code-examples)
 - [How to Contribute](#how-to-contribute)
-- [License](#license)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 
@@ -66,8 +65,6 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 <!--*Encourage contributions and provide guidelines for how others can help.*-->
 This project is open source, feel free to download the project and make changes as you see fit! If you'd like to rework anything, or use existing components of our game for your own game, go ahead! 
 
-## License
-*State the license under which your project is available.*
 
 ## Contact
 <!--- *First and last name* - *Email address*-->
