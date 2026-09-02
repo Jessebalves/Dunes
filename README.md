@@ -46,7 +46,7 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 ## What I Learned
 <!--Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.-->
 - **Gdscript**: This is the scripting language used in GoDot. All of the members of the team came into this project knowing nothing about Gdscript.
-- **Scripts**: Creating custom scripts using Gdscript and attaching the scripts to scenes within GoDot..
+- **Scripts**: Creating custom scripts using Gdscript and attaching the scripts to scenes within GoDot.
 - **Skill or Concept 3**: Any particular achievements or insights.
 
 ## Setup and Installation
