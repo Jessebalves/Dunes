@@ -43,14 +43,14 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 - GDscript
 - Pixilart
 
-## What I Learned
+## What We Learned
 <!--Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.-->
 - **Gdscript**: This is the scripting language used in GoDot. All of the members of the team came into this project knowing nothing about Gdscript.
 - **Scripts**: Creating custom scripts using Gdscript and attaching the scripts to scenes within GoDot.
-- **Skill or Concept 3**: Any particular achievements or insights.
+- **Team Management & Coordination**: Every member of the team was given their own individual tasks. Upon completion, each team member would have to coordinate with the rest of the team during the integration process. We learned that integrating a bunch of separate components to each other can lead to unforeseen circumstances which in some cases leads to the project's logic needed to be rewritten to fit our scope. 
 
 ## Setup and Installation
-*Provide a clear, step-by-step guide to set up the project locally.*
+<!--*Provide a clear, step-by-step guide to set up the project locally.*-->
 1. Clone the repo: `git clone https://github.com/Jessebalves/Dunes.git`
 2. Install dependencies: `[Example Command]`
 3. Additional steps...
