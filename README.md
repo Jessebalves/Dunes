@@ -46,6 +46,7 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 ## What We Learned
 <!--Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.-->
 - **Gdscript**: This is the scripting language used in GoDot. All of the members of the team came into this project knowing nothing about Gdscript.
+- **Scenes**: Creating user interface, 2d, and 3d scenes to meet our game design needs such as a main menu, 3d landscape, or enemies displayed in 2d format.
 - **Scripts**: Creating custom scripts using Gdscript and attaching the scripts to scenes within GoDot.
 - **Team Management & Coordination**: Every member of the team was given their own individual tasks. Upon completion, each team member would have to coordinate with the rest of the team during the integration process. We learned that integrating a bunch of separate components to each other can lead to unforeseen circumstances which in some cases leads to the project's logic needed to be rewritten to fit our scope. 
 
