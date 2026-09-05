@@ -53,8 +53,8 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 ## Setup and Installation
 <!--*Provide a clear, step-by-step guide to set up the project locally.*-->
 1. Clone the repo: `git clone https://github.com/Jessebalves/Dunes.git`
-2. Install GoDot(Windows): `https://godotengine.org/download/windows/`
-3. Install GoDot(MacOS): `https://godotengine.org/download/macos/`
+2. Install GoDot (Windows): https://godotengine.org/download/windows/
+3. Install GoDot (MacOS): https://godotengine.org/download/macos/
 4. After GoDot is installed and opened, click create a new project. 
 
 ## Usage
