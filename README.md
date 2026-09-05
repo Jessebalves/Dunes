@@ -19,7 +19,7 @@
 </details>
 
 ## Summary
-*Dunes is a real time strategy game created within the GoDot game engine, using GDscript as our scripting language. Our idea for Dunes is that we wanted a real time strategy game similar to existing video game IPs such as Totem Tribe and Starcraft, but with our own unique spin on it. We wanted our video game to take place in a desert theme, where the player units are desert based animals versus artificially controlled desert based insects.*
+*Dunes is a real time strategy game created using GoDot game engine, with GDscript as our primary scripting language. Our idea for Dunes is that we wanted a real time strategy game similar to existing video game IPs such as Totem Tribe and Starcraft, but with our own unique spin on it. We wanted our video game to take place in a desert theme, where the player units are desert based animals versus artificially controlled desert based insects.*
 
 ## Features
 <!--List the standout features of your project and what makes it unique.-->
@@ -53,8 +53,9 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 ## Setup and Installation
 <!--*Provide a clear, step-by-step guide to set up the project locally.*-->
 1. Clone the repo: `git clone https://github.com/Jessebalves/Dunes.git`
-2. Install dependencies: `[Example Command]`
-3. Additional steps...
+2. Install GoDot(Windows): `https://godotengine.org/download/windows/`
+3. Install GoDot(MacOS): `https://godotengine.org/download/macos/`
+4. After GoDot is installed and opened, click create a new project. 
 
 ## Usage
 *Guide on how to use the project, include example commands or scripts.*
