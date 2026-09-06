@@ -62,7 +62,8 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 
 ## Code Examples
 <!--*Show small, but significant snippets of code from your project.*-->
-<img width="777" height="541" alt="Screenshot 2026-09-06 152414" src="https://github.com/user-attachments/assets/dfd9a70b-70d2-40a0-93ff-3b2fb42b971b" />
+<img width="1121" height="663" alt="Screenshot 2026-09-06 152644" src="https://github.com/user-attachments/assets/c72194f8-58c7-4029-8e6d-d6b11ecca82a" />
+
 
 
 ## How to Contribute
