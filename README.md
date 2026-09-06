@@ -58,10 +58,12 @@ Detail the technologies, languages, frameworks, and tools used in the project.
 4. After GoDot is installed and opened, click create a new project. 
 
 ## Usage
-*Guide on how to use the project, include example commands or scripts.*
+<!--*Guide on how to use the project, include example commands or scripts.*-->
 
 ## Code Examples
-*Show small, but significant snippets of code from your project.*
+<!--*Show small, but significant snippets of code from your project.*-->
+<img width="777" height="541" alt="Screenshot 2026-09-06 152414" src="https://github.com/user-attachments/assets/dfd9a70b-70d2-40a0-93ff-3b2fb42b971b" />
+
 
 ## How to Contribute
 <!--*Encourage contributions and provide guidelines for how others can help.*-->
